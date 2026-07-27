@@ -1,19 +1,29 @@
+# Linear regression
 
+**La régression linéaire** est une méthode de machine learning utilisée pour prédire une valeur numérique à partir d'une ou plusieurs variables d'entrée. Elle cherche à tracer la droite qui représente le mieux la relation entre les données observées afin d'estimer de nouvelles valeurs.
 
-En termes algébriques, le modèle serait défini comme y = mx + b, où
+![Texte alternatif](linear_regression.png)
 
-    y correspond aux kilomètres par litre, soit la valeur que nous voulons prédire.
+## Prédiction
+
+L'expression de la prédiction est défini comme y = mx + b, où
+
+    y correspond aux prix de la voiture, soit la valeur que nous voulons prédire.
     m est la pente de la droite.
-    x est le poids en livres, c'est-à-dire notre valeur d'entrée.
+    x est le kilométrqge de la voiture, c'est-à-dire notre valeur d'entrée.
     b est l'ordonnée à l'origine.
 
-En ML, l'équation d'un modèle de régression linéaire s'écrit comme suit :
+## Entrainement
+
+Loss -> Indique la précision de notre droite de régression
+
+Gradient -> Variable qui permet de modifier notre pente et notre ordonnée à l'origine qvec une certaine intensité
+
+Alpha -> Constante qui permet d'appliquer un coéfficient d'apprentissage
+
+
+
+
+## Sources
 
 https://developers.google.com/machine-learning/crash-course/linear-regression?hl=fr
-
-
-tant que la before_loss > loss
-
-    loss = somme de (all prediction - all valeurs relle)
-    changer m et b en fonction de la loss
-    faire une prediction
